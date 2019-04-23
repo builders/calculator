@@ -1,0 +1,359 @@
+/*
+====================================
+
+Calculator CSS
+
+====================================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  font-family: Helvetica, sans-serif;
+  vertical-align: baseline;
+}
+
+
+/*
+------------------------------------
+Display
+------------------------------------ */
+
+#display {
+  font-weight: normal;
+  font-size: 2.5em;
+  color: #fff;
+  background: #000;
+  text-align: right;
+  margin: 0;
+  padding: 0 1em;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+/*
+------------------------------------
+Buttons
+------------------------------------ */
+
+#panel {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 75%;
+}
+
+button {
+  font-size: 2em;
+  display: block;
+  width: 25%;
+  height: 20%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  font-size: 1.6em;
+}
+
+.operator,
+.calculate {
+  font-size: 2.4em;
+  padding-bottom: .2em;
+}
+
+#zero {
+  top: 75%;
+  left: 0;
+  width: 40%;
+}
+
+#one {
+  top: 50%;
+  left: 0;
+}
+
+#two {
+  top: 50%;
+  left: 20%;
+}
+
+#three {
+  top: 50%;
+  left: 40%;
+}
+
+#four {
+  top: 25%;
+  left: 0;
+}
+
+#five {
+  top: 25%;
+  left: 20%;
+}
+
+#six {
+  top: 25%;
+  left: 40%;
+}
+
+#seven {
+  top: 0;
+  left: 0;
+}
+
+#eight {
+  top: 0;
+  left: 20%;
+}
+
+#nine {
+  top: 0;
+  left: 40%;
+}
+
+#decimal {
+  top: 75%;
+  left: 40%;
+}
+
+#add {
+  top: 75%;
+  left: 60%;
+}
+
+#subtract {
+  top: 50%;
+  left: 60%;
+}
+
+#multiply {
+  top: 25%;
+  left: 60%;
+}
+
+#divide {
+  top: 0;
+  left: 60%;
+}
+
+#clear {
+  top: 0;
+  left: 80%;
+}
+
+#equals {
+  top: 25%;
+  left: 80%;
+  width: 20%;
+  height: 75%;
+}
+
+
+/*
+------------------------------------
+Color
+------------------------------------ */
+
+button {
+  color: #fff;
+  background: #444;
+  border: 1px solid #000;
+}
+
+button:hover {
+  background: #333;
+}
+
+button.select,
+button:active {
+  background: #222;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.operator {
+  background: DodgerBlue;
+}
+
+.operator:hover {
+  background: #06c;
+}
+
+.operator.select,
+.operator:active {
+  background: #004d99;
+}
+
+.calculate {
+  background: DarkOrange;
+}
+
+.calculate:hover {
+  background: #cc7000;
+}
+
+.calculate.select,
+.calculate:active {
+  background: #995400;
+}
+
+.function {
+  background: Red;
+}
+
+.function:hover {
+  background: #c00;
+}
+
+.function.select,
+.function:active {
+  background: #900;
+}
+
+
+/*
+------------------------------------
+Media Queries
+------------------------------------ */
+
+@media (orientation: portrait) {
+
+  .button {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+  }
+
+  #zero {
+    top: 60%;
+    left: 0;
+    width: 50%;
+  }
+
+  #one {
+    top: 40%;
+    left: 0;
+  }
+
+  #two {
+    top: 40%;
+    left: 25%;
+  }
+
+  #three {
+    top: 40%;
+    left: 50%;
+  }
+
+  #four {
+    top: 20%;
+    left: 0;
+  }
+
+  #five {
+    top: 20%;
+    left: 25%;
+  }
+
+  #six {
+    top: 20%;
+    left: 50%;
+  }
+
+  #seven {
+    top: 0;
+    left: 0;
+  }
+
+  #eight {
+    top: 0;
+    left: 25%;
+  }
+
+  #nine {
+    top: 0;
+    left: 50%;
+  }
+
+  #decimal {
+    top: 60%;
+    left: 50%;
+  }
+
+  #add {
+    top: 60%;
+    left: 75%;
+  }
+
+  #subtract {
+    top: 40%;
+    left: 75%;
+  }
+
+  #multiply {
+    top: 20%;
+    left: 75%;
+  }
+
+  #divide {
+    top: 0;
+    left: 75%;
+  }
+
+  #clear {
+    top: 80%;
+    left: 0;
+  }
+
+  #equals {
+    top: 80%;
+    left: 25%;
+    width: 75%;
+    height: 20%;
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  #display {
+    font-size: 5em;
+  }
+
+  .button {
+    font-size: 3em;
+  }
+
+  .operator,
+  .calculate {
+    font-size: 4.5em;
+  }
+
+}
