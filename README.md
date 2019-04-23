@@ -18,4 +18,4 @@ Then, I discovered Glitch through freeCodeCamp. Now, I am wondering whether I ca
 - When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
 - You can get feedback on your project by sharing it with your friends on Facebook.
 
-Copyright (c) 2019 The Builders Collective | [MIT Licence](LICENCE)
+Copyright (c) 2019 The Builders Collective | [MIT License](LICENSE)
